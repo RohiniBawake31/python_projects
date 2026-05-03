@@ -26,7 +26,7 @@ README.md
 1. Clone the repository:
 
 ```
-git clone https://github.com/RohiniBawake31/movie-booking-system
+git clone https://github.com/RohiniBawake31/python_projects
 ```
 
 2. Navigate to project folder:

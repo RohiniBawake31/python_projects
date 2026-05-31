@@ -1,10 +1,7 @@
 students=[]
 
 # Add students data 
-def add_student():
-   name=input("Enter your name : ")
-   age=input ("Enter age: ")
-   course=input("Enter course:")
+def add_student(name,age,course):
    student={"name":name,
              "age":age,
              "course":course}     
@@ -13,10 +10,9 @@ def add_student():
    print(students)
 
 # search students data
-def search_student():
-  search_name=input("Enter student name for search: ")
+def search_student(student_name):
   for student in students:
-    if student['name'].lower() == search_name.lower():
+    if student['name'].lower() == student_name.lower():
          print("name:",student['name'])
          print("age:",student['age'])
          print("course:",student['course'])
@@ -25,11 +21,9 @@ def search_student():
         print("student not found")
 
 # Delete students data
-def delete_student():
-    search_name = input("Enter student name to delete: ")
-
+def delete_student(student_name):
     for student in students:
-        if student["name"].lower() == search_name.lower():
+        if student["name"].lower() == student_name.lower():
             students.remove(student)
             print("Student deleted successfully!")
             print(students)
@@ -39,8 +33,8 @@ def delete_student():
 
 
 if __name__=="__main__":
-  add_student()
-  search_student()
-  delete_student()
+  add_student("sai",30,"BSC")
+  search_student("sai")
+  delete_student("sai")
 
 
